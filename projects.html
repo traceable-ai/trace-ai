@@ -1,17 +1,23 @@
 
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Projetos – TRACE AI</title>
 
-    <!-- Meta Tags -->
-    <meta name="description" content="Projetos de pesquisa do TRACE-AI em inteligência artificial rastreável para investigações, incluindo NL2Rules e SynSimba." />
-    <link rel="canonical" href="https://traceable-ai.github.io/trace-ai/projects.html" />
-    <meta property="og:title" content="Projetos – TRACE AI" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://traceable-ai.github.io/trace-ai/assets/preview.png" />
+    <meta name="description"
+        content="Projetos de pesquisa TRACE AI: SynSimba, Co-Investigator e NL2Rules, com foco em inteligência artificial rastreável para investigações.">
+
+    <link rel="canonical"
+        href="https://traceable-ai.github.io/trace-ai/projects.html">
+
+    <meta property="og:title" content="Projetos – TRACE AI">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://traceable-ai.github.io/trace-ai/assets/preview.png">
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -19,21 +25,6 @@
     <!-- Fonts -->
     <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/plantin-mt-pro" rel="stylesheet">
-
-    <!-- MathJax -->
-    <script>
-        window.MathJax = {
-            tex: {
-                inlineMath: [['$', '$'], ['\\(', '\\)']],
-                displayMath: [['$$', '$$'], ['\\[', '\\]']]
-            },
-            svg: {
-                fontCache: 'global'
-            }
-        };
-    </script>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
     <style>
         body {
@@ -113,7 +104,11 @@
         }
 
         .project-card {
-            background: linear-gradient(135deg, #f9fafb 0%, #ffffff 100%);
+            background: linear-gradient(
+                135deg,
+                #f9fafb 0%,
+                #ffffff 100%
+            );
             border-radius: 1rem;
             padding: 2rem;
             border: 1px solid #e5e7eb;
@@ -156,7 +151,7 @@
 
 <body>
 
-    <!-- Fixed Header -->
+    <!-- HEADER -->
     <header class="fixed top-0 left-0 right-0 z-50">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
 
@@ -170,14 +165,29 @@
             <nav class="hidden md:flex space-x-8 text-gray-500 font-medium">
 
                 <a href="projects.html" class="text-harvard-crimson">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.627 48.627 0 0 1 12 20.904a48.627 48.627 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.57 50.57 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" />
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         fill="none"
+                         viewBox="0 0 24 24"
+                         stroke-width="1.5"
+                         stroke="currentColor"
+                         class="w-5 h-5">
+                        <path stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.627 48.627 0 0 1 12 20.904a48.627 48.627 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.57 50.57 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" />
                     </svg>
                     <span>Projetos</span>
                 </a>
 
                 <a href="people.html">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         width="24" height="24"
+                         viewBox="0 0 24 24"
+                         fill="none"
+                         stroke="currentColor"
+                         stroke-width="1.5"
+                         stroke-linecap="round"
+                         stroke-linejoin="round"
+                         class="w-5 h-5">
                         <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
                         <circle cx="9" cy="7" r="4"></circle>
                         <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
@@ -186,8 +196,13 @@
                     <span>Pessoas</span>
                 </a>
 
-                <a href="https://traceable-ai.github.io/trace-ai/" target="_blank">
-                    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current">
+                <a href="https://traceable-ai.github.io/trace-ai/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    <svg role="img"
+                         viewBox="0 0 24 24"
+                         xmlns="http://www.w3.org/2000/svg"
+                         class="w-5 h-5 fill-current">
                         <title>GitHub</title>
                         <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
                     </svg>
@@ -195,42 +210,86 @@
                 </a>
 
                 <a href="contact.html">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         fill="none"
+                         viewBox="0 0 24 24"
+                         stroke-width="1.5"
+                         stroke="currentColor"
+                         class="w-5 h-5">
+                        <path stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
                     </svg>
                     <span>Contato</span>
                 </a>
-
             </nav>
 
             <!-- Mobile Menu Button -->
             <div class="md:hidden">
-                <button id="menu-btn" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-harvard-crimson">
-                    <span class="sr-only">Abrir menu principal</span>
-                    <svg id="icon-open" class="h-6 w-6 block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                <button id="menu-btn"
+                        type="button"
+                        aria-label="Abrir menu principal"
+                        aria-expanded="false"
+                        aria-controls="mobile-menu"
+                        class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset">
+
+                    <svg id="icon-open"
+                         class="h-6 w-6 block"
+                         xmlns="http://www.w3.org/2000/svg"
+                         fill="none"
+                         viewBox="0 0 24 24"
+                         stroke="currentColor">
+                        <path stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M4 6h16M4 12h16M4 18h16"/>
                     </svg>
-                    <svg id="icon-close" class="h-6 w-6 hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+
+                    <svg id="icon-close"
+                         class="h-6 w-6 hidden"
+                         xmlns="http://www.w3.org/2000/svg"
+                         fill="none"
+                         viewBox="0 0 24 24"
+                         stroke="currentColor">
+                        <path stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M6 18L18 6M6 6l12 12"/>
                     </svg>
                 </button>
             </div>
-
         </div>
 
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a href="projects.html" class="block px-3 py-2 rounded-md text-base font-medium menu-active">Projetos</a>
-                <a href="people.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-500">Pessoas</a>
-                <a href="https://traceable-ai.github.io/trace-ai/" target="_blank" class="block px-3 py-2 rounded-md text-base font-medium text-gray-500">Github</a>
-                <a href="contact.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-500">Contato</a>
+                <a href="projects.html"
+                   class="block px-3 py-2 rounded-md text-base font-medium menu-active">
+                    Projetos
+                </a>
+
+                <a href="people.html"
+                   class="block px-3 py-2 rounded-md text-base font-medium text-gray-500">
+                    Pessoas
+                </a>
+
+                <a href="https://traceable-ai.github.io/trace-ai/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="block px-3 py-2 rounded-md text-base font-medium text-gray-500">
+                    Github
+                </a>
+
+                <a href="contact.html"
+                   class="block px-3 py-2 rounded-md text-base font-medium text-gray-500">
+                    Contato
+                </a>
             </div>
         </div>
     </header>
 
-    <!-- Main Content -->
-    <div class="main-content">
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
         <div class="container mx-auto max-w-5xl px-6 py-8">
 
             <div class="text-center mb-10">
@@ -239,15 +298,15 @@
                 </h1>
             </div>
 
-            <!-- Projeto: SynSimba -->
+            <!-- ======================================= -->
+            <!-- PROJETO 1: SYNSIMBA                     -->
+            <!-- ======================================= -->
+
             <div class="project-card mb-8">
+
                 <h2 class="text-2xl md:text-3xl font-semibold text-harvard-crimson">
                     SynSimba: base sintética brasileira compatível com o Simba
                 </h2>
-
-                <p class="text-sm text-gray-500 mb-4">
-                    <!-- <span class="font-semibold">Pesquisador:</span> Dr. Lindeberg Pessoa Leite -->
-                </p>
 
                 <p class="text-gray-700 mt-2">
                     O Sistema de Investigação de Movimentações Bancárias (Simba) é uma infraestrutura estratégica para o recebimento, o processamento e a análise de dados bancários em procedimentos oficiais de afastamento de sigilo, sendo utilizado por órgãos como a Polícia Federal e o Ministério Público no combate à lavagem de dinheiro.
@@ -267,16 +326,23 @@
 
                 <div class="project-steps">
                     <ol class="steps-list">
+
                         <li>
                             <strong>Geração sintética.</strong>
                             Um motor de geração produz entidades, contas, instituições, transações e padrões controlados. O Tide é adotado como motor inicial, mantendo-se a possibilidade de integração futura de outros geradores.
-                            (<a href="https://arxiv.org/abs/2603.01863" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-harvard-crimson underline decoration-gray-300">van den Beukel et al., 2026</a>).
+                            (<a href="https://arxiv.org/abs/2603.01863"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="text-gray-500 hover:text-harvard-crimson underline decoration-gray-300">van den Beukel et al., 2026</a>).
                         </li>
 
                         <li>
                             <strong>Adaptação ao contexto brasileiro.</strong>
                             Normativos do Banco Central orientam o leiaute e os padrões suspeitos, enquanto fontes públicas nacionais parametrizam a atividade transacional regular. O leiaute adotado como referência é o definido pela Carta-Circular nº 3.454/2010 do Banco Central do Brasil
-                            (<a href="https://www.bcb.gov.br/estabilidadefinanceira/exibenormativo?numero=3454&amp;tipo=Carta+Circular" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-harvard-crimson underline decoration-gray-300">Banco Central do Brasil, 2010</a>).
+                            (<a href="https://www.bcb.gov.br/estabilidadefinanceira/exibenormativo?numero=3454&amp;tipo=Carta+Circular"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="text-gray-500 hover:text-harvard-crimson underline decoration-gray-300">Banco Central do Brasil, 2010</a>).
                         </li>
 
                         <li>
@@ -288,6 +354,7 @@
                             <strong>Benchmark de modelos.</strong>
                             A base sintética materializada é utilizada no treinamento, no teste e na comparação de modelos de detecção de atividades suspeitas. Em etapa complementar, os modelos serão avaliados em casos reais da Polícia Federal.
                         </li>
+
                     </ol>
                 </div>
 
@@ -296,32 +363,119 @@
                     <span class="font-medium text-gray-600">Pesquisadores:</span>
                     Dr. Lindeberg Leite
                     <span class="mx-1">·</span>
-                    Prof. Felipe Campelo <span class="text-gray-400">(University of Bristol)</span>
+                    Prof. Felipe Campelo
+                    <span class="text-gray-400">(University of Bristol)</span>
                     <span class="mx-1">·</span>
-                    Dr. Teofilo Emidio de Campos <span class="text-gray-400">(Microsoft Applied Sciences Group)</span>
+                    Dr. Teofilo Emidio de Campos
+                    <span class="text-gray-400">(Microsoft Applied Sciences Group)</span>
                     <span class="mx-1">·</span>
-                    Dr. Roberto Almino <span class="text-gray-400">(Aston University)</span>
+                    Dr. Roberto Almino
+                    <span class="text-gray-400">(Aston University)</span>
                     <span class="mx-1">·</span>
-                    Prof. Luis Rocha <span class="text-gray-400">(Ghent University)</span>
+                    Prof. Luis Rocha
+                    <span class="text-gray-400">(Ghent University)</span>
                 </div>
+
             </div>
 
-            <!-- Projeto: NL2Rules -->
+            <!-- ======================================= -->
+            <!-- PROJETO 2: CO-INVESTIGATOR              -->
+            <!-- ======================================= -->
+
+            <div class="project-card mb-8">
+
+                <h2 class="text-2xl md:text-3xl font-semibold text-harvard-crimson">
+                    Co-Investigator: Accelerating Law Enforcement Investigations with LLM-Driven Hypothesis Generation
+                </h2>
+
+                <p class="text-gray-700 mt-2">
+                    O <strong>Co-Investigator</strong> propõe um método de investigação assistida por inteligência artificial, baseado na geração, no teste e no refinamento iterativo de hipóteses por modelos de linguagem de grande porte (<em>Large Language Models — LLMs</em>).
+                </p>
+
+                <p class="text-gray-700 mt-2">
+                    Inspirado no conceito de
+                    <a href="https://research.google/blog/accelerating-scientific-breakthroughs-with-an-ai-co-scientist/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="text-gray-500 hover:text-harvard-crimson underline decoration-gray-300">AI Co-Scientist (Google Research)</a>,
+                    o projeto busca acelerar investigações policiais mediante a integração de agentes de IA, ferramentas analíticas e fontes de evidências, permitindo identificar padrões, explorar relações e formular hipóteses fundamentadas em dados.
+                </p>
+
+                <p class="text-gray-700 mt-2">
+                    A abordagem é estruturada em três componentes principais:
+                </p>
+
+                <div class="project-steps">
+                    <ol class="steps-list">
+
+                        <li>
+                            <strong>Hypothesis Generation.</strong>
+                            Formulação de hipóteses investigativas a partir dos dados disponíveis, do contexto da investigação e do conhecimento especializado.
+                        </li>
+
+                        <li>
+                            <strong>Hypothesis Testing.</strong>
+                            Execução de consultas e ferramentas analíticas para buscar evidências favoráveis e contrárias às hipóteses.
+                        </li>
+
+                        <li>
+                            <strong>Hypothesis Refinement.</strong>
+                            Avaliação dos resultados, revisão das hipóteses e direcionamento de novas análises.
+                        </li>
+
+                    </ol>
+                </div>
+
+                <p class="text-gray-700 mt-2">
+                    <strong>Primeiro caso de uso — investigação financeira.</strong>
+                    A validação inicial utiliza dados bancários reais do Sistema de Investigação de Movimentações Bancárias (SIMBA), combinando um motor determinístico de regras (<em>Rules Engine</em>) com agentes baseados em LLMs para investigar possíveis padrões de lavagem de dinheiro.
+                </p>
+
+                <p class="text-gray-700 mt-2">
+                    Embora a investigação financeira constitua o cenário experimental inicial, o Co-Investigator é concebido como um método generalizável, aplicável a diferentes contextos policiais, como crimes cibernéticos, fraudes e crimes ambientais.
+                </p>
+
+                <p class="text-gray-700 mt-2">
+                    A contribuição científica pretendida é desenvolver e avaliar um método de investigação policial orientado por hipóteses geradas por LLMs, capaz de apoiar a descoberta de relações e comportamentos relevantes, mantendo a rastreabilidade das evidências, a explicabilidade dos resultados e a decisão final sob responsabilidade humana.
+                </p>
+
+                <!-- Pesquisador -->
+                <div class="mt-6 pt-4 border-t border-gray-200 text-sm text-gray-500 leading-relaxed">
+                    <span class="font-medium text-gray-600">Pesquisador:</span>
+                    Dr. Lindeberg Leite
+                </div>
+
+            </div>
+
+            <!-- ======================================= -->
+            <!-- PROJETO 3: NL2RULES                     -->
+            <!-- ======================================= -->
+
             <div class="project-card">
+
                 <h2 class="text-2xl md:text-3xl font-semibold text-harvard-crimson">
                     NL2Rules: de requisitos de validação em linguagem natural a regras executáveis
                 </h2>
 
                 <p class="text-gray-700 mt-2">
                     Muitas aplicações reais envolvem validação: documentos, registros ou outros artefatos precisam ser verificados contra regras descritas em requisitos, políticas, normas ou manuais. Automatizar essas verificações exige transformar regras escritas para interpretação humana em uma forma executável e consistente
-                    (<a href="https://arxiv.org/abs/2603.15799" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-harvard-crimson underline decoration-gray-300">Gupta &amp; Sreenivasamurthy, 2026</a>).
+                    (<a href="https://arxiv.org/abs/2603.15799"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-gray-500 hover:text-harvard-crimson underline decoration-gray-300">Gupta &amp; Sreenivasamurthy, 2026</a>).
                     Embora modelos de linguagem possam apoiar essa transformação, gerar diretamente a regra executável pode fazer com que uma interpretação incorreta do requisito seja incorporada ao resultado final
-                    (<a href="https://doi.org/10.1109/ICSE55347.2025.00108" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-harvard-crimson underline decoration-gray-300">Tian et al., 2025</a>).
+                    (<a href="https://doi.org/10.1109/ICSE55347.2025.00108"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-gray-500 hover:text-harvard-crimson underline decoration-gray-300">Tian et al., 2025</a>).
                 </p>
 
                 <p class="text-gray-700 mt-2">
                     O NL2Rules separa interpretação e execução. Primeiro, um modelo de linguagem transforma os requisitos em uma representação intermediária estruturada, com condições, restrições e exceções explícitas. Essa representação é verificada quanto à consistência e à compatibilidade com os dados e atributos previstos, sinalizando ambiguidades para revisão. Somente então um componente determinístico gera as regras executáveis. A estratégia se apoia em trabalhos que utilizam representações intermediárias antes da geração do artefato final
-                    (<a href="https://aclanthology.org/2024.tacl-1.73/" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-harvard-crimson underline decoration-gray-300">Mordechai et al., 2024</a>).
+                    (<a href="https://aclanthology.org/2024.tacl-1.73/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-gray-500 hover:text-harvard-crimson underline decoration-gray-300">Mordechai et al., 2024</a>).
                 </p>
 
                 <p class="text-gray-700 mt-2">
@@ -334,6 +488,7 @@
 
                 <div class="project-steps">
                     <ol class="steps-list">
+
                         <li>
                             <strong>Interpretação dos requisitos.</strong>
                             O modelo identifica condições, restrições e exceções presentes no texto.
@@ -358,6 +513,7 @@
                             <strong>Avaliação experimental.</strong>
                             O método é comparado à geração direta de regras e à abordagem sem verificação intermediária, considerando a fidelidade aos requisitos e a correção das decisões.
                         </li>
+
                     </ol>
                 </div>
 
@@ -366,12 +522,13 @@
                     <span class="font-medium text-gray-600">Pesquisador:</span>
                     Dr. Lindeberg Leite
                 </div>
+
             </div>
 
         </div>
-    </div>
+    </main>
 
-    <!-- JS para menu mobile -->
+    <!-- MOBILE MENU SCRIPT -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const menuBtn = document.getElementById('menu-btn');
@@ -379,11 +536,18 @@
             const iconOpen = document.getElementById('icon-open');
             const iconClose = document.getElementById('icon-close');
 
-            if (menuBtn) {
+            if (menuBtn && mobileMenu && iconOpen && iconClose) {
                 menuBtn.addEventListener('click', () => {
-                    mobileMenu.classList.toggle('hidden');
-                    iconOpen.classList.toggle('hidden');
-                    iconClose.classList.toggle('hidden');
+                    const isOpen = mobileMenu.classList.toggle('hidden') === false;
+
+                    iconOpen.classList.toggle('hidden', isOpen);
+                    iconClose.classList.toggle('hidden', !isOpen);
+
+                    menuBtn.setAttribute('aria-expanded', String(isOpen));
+                    menuBtn.setAttribute(
+                        'aria-label',
+                        isOpen ? 'Fechar menu principal' : 'Abrir menu principal'
+                    );
                 });
             }
         });
