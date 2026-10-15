@@ -129,33 +129,31 @@
         .person-name {
             font-weight: 600;
             color: #A41034;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.5rem;
         }
 
         .social-links {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.65rem;
-            margin-top: 0.75rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
         }
 
         .social-link {
             display: inline-flex;
             align-items: center;
-            gap: 0.4rem;
-            padding: 0.35rem 0.7rem;
-            border: 1px solid #e5e7eb;
-            border-radius: 0.5rem;
-            color: #374151;
-            font-size: 0.875rem;
+            justify-content: center;
+            color: #6b7280;
             text-decoration: none;
-            transition: color 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+            transition: color 0.2s ease, transform 0.2s ease;
         }
 
         .social-link:hover,
         .social-link:focus-visible {
             color: #A41034;
-            border-color: #A41034;
-            background-color: #fff7f9;
+            transform: scale(1.15);
         }
     </style>
 </head>
@@ -296,7 +294,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function createSocialLinks(person) {
-    const box = document.createElement('div');
+    const box = document.createElement('span');
     box.className = 'social-links';
 
     const add = (field, icon, label) => {
@@ -307,12 +305,11 @@ function createSocialLinks(person) {
             a.rel = 'noopener noreferrer';
             a.className = 'social-link';
             a.setAttribute('aria-label', `Abrir ${label} de ${person.name}`);
-            a.innerHTML = `${icon}<span>${label}</span>`;
+            a.innerHTML = icon;
             box.appendChild(a);
         }
     };
 
-    add('website', '<i class="fas fa-globe" aria-hidden="true"></i>', 'Site');
     add('google_scholar', '<i class="fas fa-graduation-cap" aria-hidden="true"></i>', 'Google Scholar');
     add('linkedin', '<i class="fab fa-linkedin-in" aria-hidden="true"></i>', 'LinkedIn');
 
@@ -345,11 +342,11 @@ function createPersonCard(person) {
     const role = document.createElement('div');
     role.textContent = person.role;
 
+    const links = createSocialLinks(person);
+    if (links) name.appendChild(links);
+
     info.appendChild(name);
     info.appendChild(role);
-
-    const links = createSocialLinks(person);
-    if (links) info.appendChild(links);
 
     div.appendChild(photo);
     div.appendChild(info);
